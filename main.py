@@ -1,4 +1,4 @@
-from sessions_and_memory import SessionsAndMemory
+from memory import Memory
 import os
 import asyncio
 
@@ -19,7 +19,7 @@ async def main():
     else:
         print("MY_API_KEY environment variable not set.")
 
-    agent = SessionsAndMemory(api_key)
+    agent = Memory(api_key)
 
     await agent.do_something()
 
